@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":[""],"file":"main.js"}
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["$('#button').click(function() {\n    $('#menu').slideToggle('slow');\n});"],"file":"main.js"}

@@ -1,0 +1,54 @@
+@import "base";
+
+.header {
+  width: 100%;
+  padding: 42px 0px;
+  @include flexBetween;
+}
+
+.nav {
+  text-align: right;
+
+  &__btn {
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+  &__list {
+    padding: 10px 20px;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+
+@media only screen and (max-width : 768px) {
+  .nav {
+    &__btn {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+    }
+    &__list {
+      display: none;
+      padding: 10px 0;
+    }
+    &__link {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}

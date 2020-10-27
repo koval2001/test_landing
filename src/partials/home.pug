@@ -1,7 +1,25 @@
-a(href='google.com') Google
-|
-|
-a(class='button' href='google.com') Google
-|
-|
-a(class='button', href='google.com') Google
+section#title
+    .container.container-fluid
+        .row
+            header.header
+                .logo
+                    a.logo__link(href='#'): img(src=("../img/logo.svg"))
+                nav.nav
+                    #button.nav__btn
+                        i.fa.fa-bars
+                    ul#menu.nav__list
+                        li.nav__item
+                            a.nav__link(href='#') About
+                        li.nav__item
+                            a.nav__link(href='#') Products
+                        li.nav__item
+                            a.nav__link(href='#') Rate
+                        li.nav__item
+                            a.nav__link(href='#') Support
+        .row.headerTitles
+            .col-md-12.pl-0
+                h1.main__title Buy and Sell Cryptos easier than ever
+            .col-md-7.col-12.pl-0
+                h3.sub__title With our new finance app, you will ever be on track of all transactions in a smart and easy way.
+    .imgWrapper
+        img(src=("../img/home.png")).imgWrapper__img

@@ -28,7 +28,7 @@ var path = {
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
-        pug: 'src/*.pug',
+        pug: 'src/**/*.pug',
         js: 'src/js/**/*.js',
         css: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',

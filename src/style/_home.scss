@@ -1,0 +1,47 @@
+* {
+  margin:0;
+  padding: 0;
+  font-family: 'Nunito';
+}
+
+#title {
+  min-height: 1135px;
+  background: url("../img/bg.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.sub__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600!important;
+  line-height: 74px;
+  letter-spacing: 0.02em;
+  color: white;
+}
+
+.headerTitles {
+  padding-top: 100px;
+}
+
+.imgWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  bottom: 225px;
+
+  &__img {
+    width: 80%;
+  }
+
+  @include flexEnd;
+}
