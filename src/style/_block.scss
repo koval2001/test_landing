@@ -13,6 +13,7 @@
 
 #pres {
   background: $color-grey;
+  padding-bottom: 120px;
 
   .block__title {
     padding-bottom: 15px;
@@ -24,6 +25,12 @@
 
   .divPaddingTop {
     padding-top: 140px;
+  }
+
+  .more__link {
+    &::after {
+      color: $color-blue;
+    }
   }
 }
 
@@ -61,6 +68,42 @@
   background-size: 58%;
   padding-left: 60px!important;
   padding-top: 70px;
+}
+
+#wallet {
+  background: url("../img/letter.svg") no-repeat -50% 0%;
+  background-size: 50%;
+  min-height:640px;
+  position: relative;
+  padding-top: 135px;
+
+  .container, .row {
+    min-height:500px;
+  }
+
+  .row {
+    background: url("../img/points.svg") no-repeat 50% 50%;
+    background-size: 35%;
+  }
+
+  .imgBlock {
+    position: absolute;
+    right: 0;
+  }
+
+  .block__title {
+    padding-top: 50px;
+  }
+
+  p {
+    padding-bottom: 95px;
+  }
+
+  .more__link {
+    &::after {
+      color: $color-blue;
+    }
+  }
 }
 
 .imgBlock {
