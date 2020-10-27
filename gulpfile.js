@@ -29,7 +29,7 @@ var path = {
     },
     watch: {
         pug: 'src/**/*.pug',
-        js: 'src/js/**/*.js',
+        js: 'src/js/*.js',
         css: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
