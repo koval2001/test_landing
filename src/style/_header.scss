@@ -28,8 +28,9 @@
     text-decoration: none;
     text-transform: capitalize;
     &:hover {
-      background: white;
-      color: black;
+      color: $color-orange;
+      text-decoration: none;
+      transition: color .2s;
     }
   }
 }

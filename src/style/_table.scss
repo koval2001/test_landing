@@ -10,12 +10,16 @@ table {
   border-top: 1px solid $color-border;
 
   td, th {
-    padding: 13px 20px;
     font-family: "Helvetica Neue";
     font-weight: 400;
   }
 
+  td {
+    padding: 25px 0px 45px 20px;
+  }
+
   th {
+    padding: 13px 20px;
     font-weight: 700;
     &:first-child {
       border-left: 2px solid $color-gray;

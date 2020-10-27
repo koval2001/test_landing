@@ -1,7 +1,7 @@
-footer
+footer#footerblock
     .container.container-fluid.h-100
         .row
-            .col-12
+            .col-12.d-flex.justify-content-between.topFooter
                 .socialMedia
                     p contact us
                     .socialIconsWrap
@@ -9,3 +9,14 @@ footer
                         a.social__link(href='#'): i.fab.fa-twitter
                         a.social__link(href='#'): i.fab.fa-facebook-square
                 .sendEmail
+                    p.textBoldCursive Get Updates from us
+                    form(action="/cookie" method="POST")#formEmail
+                        input(type="text" name="username" placeholder="Type Email address")
+                        input(type="submit" value="Send")
+            .col-12.d-flex.justify-content-between.bottomFooter.px-0
+                .left
+                    a.textBoldCursive(href='#') About Us
+                    a.textBoldCursive(href='#') Contact Us
+                .right
+                    a.textBoldCursive(href='#') FAQ
+                    a.textBoldCursive(href='#') Back to top

@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["$('#button').click(function() {\n    $('#menu').slideToggle('slow');\n});"],"file":"main.js"}
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["$('#button').click(function() {\n    $('#menu').slideToggle('slow');\n});\n\n\n$('a[href^=\"#\"]').click(function () {\n    var target = $(this).attr('href');\n    $('html, body').animate({scrollTop: $(target).offset().top - 90 }, 800);\n    return false;\n});"],"file":"main.js"}
