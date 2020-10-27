@@ -3,7 +3,7 @@
 .header {
   width: 100%;
   padding: 42px 0px;
-  @include flexBetween;
+  @include flexLayout;
 }
 
 .nav {
@@ -38,8 +38,7 @@
 @media only screen and (max-width : 768px) {
   .nav {
     &__btn {
-      display: flex;
-      justify-content: flex-end;
+      @include flexLayout(flex-end);
       padding: 10px 20px;
     }
     &__list {

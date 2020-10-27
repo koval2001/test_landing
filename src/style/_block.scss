@@ -1,0 +1,78 @@
+#browse {
+  padding-top: 80px;
+  min-height:500px;
+
+  .container, .row {
+    min-height:500px;
+  }
+
+  .block__title {
+    padding-bottom: 95px;
+  }
+}
+
+#pres {
+  background: $color-grey;
+
+  .block__title {
+    padding-bottom: 15px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+
+  .pointsBg {
+    padding-top: 140px;
+  }
+}
+
+.block__title {
+  color: $color-green;
+  font-size: 45px;
+  @include textBasics(700);
+  line-height: 68px;
+}
+
+.more__link {
+  color: $color-dark;
+  font-size: 24px;
+  @include textBasics;
+  line-height: 33px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &::after {
+    padding-left: 10px;
+    content: '\f101';
+    font-family: 'FontAwesome';
+    color: $color-orange;
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pointsBg {
+  background: url("../img/points.svg") no-repeat 0% 50%;
+  background-size: 58%;
+  padding-left: 60px!important;
+  padding-top: 70px;
+}
+
+.imgBlockWrapper {
+  position: relative;
+
+  & .imgBlock {
+    width: 325px;
+
+    &:last-child {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+  }
+}

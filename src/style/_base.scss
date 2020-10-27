@@ -1,9 +1,9 @@
-@mixin flexBetween {
+@mixin flexLayout($justifyContent: space-between) {
   display: flex;
-  justify-content: space-between;
+  justify-content: $justifyContent;
 }
 
-@mixin flexEnd {
-  display: flex;
-  justify-content: flex-end;
+@mixin textBasics($fontWeight: 600) {
+  font-style: normal;
+  font-weight: $fontWeight;
 }
