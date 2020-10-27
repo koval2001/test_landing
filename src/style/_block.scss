@@ -22,7 +22,7 @@
     padding-bottom: 30px;
   }
 
-  .pointsBg {
+  .divPaddingTop {
     padding-top: 140px;
   }
 }
@@ -61,6 +61,12 @@
   background-size: 58%;
   padding-left: 60px!important;
   padding-top: 70px;
+}
+
+.imgBlock {
+  img {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.13);
+  }
 }
 
 .imgBlockWrapper {

@@ -34,12 +34,12 @@
 .imgWrapper {
   position: absolute;
   right: 0;
-  bottom: 50px;
-  bottom: 225px;
+  bottom: 200px;
 
   &__img {
     width: 80%;
-    height: auto;
+    height: auto!important;
+    object-fit: contain;
   }
 
   @include flexLayout(flex-end);
