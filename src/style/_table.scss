@@ -1,0 +1,39 @@
+#tableblock {
+  padding: 120px 0px;
+  background-color: $color-gray;
+}
+
+table {
+  background-color: white;
+  padding: 13px 20px;
+  color: $color-table;
+  border-top: 1px solid $color-border;
+
+  td, th {
+    padding: 13px 20px;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+  }
+
+  th {
+    font-weight: 700;
+    &:first-child {
+      border-left: 2px solid $color-gray;
+    }
+    &:last-child {
+      border-right: 2px solid $color-gray;
+    }
+  }
+
+  tr {
+    border-top: 1px solid $color-border;
+
+    &:first-child {
+      border-bottom: 3px solid $color-gray;
+    }
+
+    &:nth-child(2) {
+      box-shadow: inset 0 5px 1px -2px $color-border;
+    }
+  }
+}
