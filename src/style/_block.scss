@@ -232,6 +232,10 @@
       top: -75px;
       transform: translateX(-50%);
     }
+    @media (max-width: 425px) {
+      width: 65%;
+      top: -90px;
+    }
   }
 
   .block__title {
@@ -323,6 +327,9 @@
         position: absolute;
         transform: translateX(-50%);
       }
+      @media (max-width:425px) {
+        left: 38%;
+      }
     }
 
     &:last-child {
@@ -341,6 +348,10 @@
       @media (max-width: 575px) {
         position: relative;
         left: 50%;
+      }
+
+      @media (max-width: 425px) {
+        left: 38%;
       }
     }
   }

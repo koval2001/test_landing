@@ -4,18 +4,19 @@ section#title
             header.header
                 .logo
                     a.logo__link(href='#'): img(src=("../img/logo.svg"))
-                nav.nav
-                    #button.nav__btn
+                nav.navbar
+                    label#js-navbar-toggle.navbar-toggle(for='chkToggle')
                         i.fa.fa-bars
-                    ul#menu.nav__list
-                        li.nav__item
-                            a.nav__link(href='#textblock') About
-                        li.nav__item
-                            a.nav__link(href='#browse') Products
-                        li.nav__item
-                            a.nav__link(href='#tableblock') Rate
-                        li.nav__item
-                            a.nav__link(href='#footerblock') Support
+                    input#chkToggle(type='checkbox')
+                    ul#js-menu.main-nav
+                        li
+                            a.nav-links(href='#textblock') About
+                        li
+                            a.nav-links(href='#browse') Products
+                        li
+                            a.nav-links(href='#tableblock') Rate
+                        li
+                            a.nav-links(href='#footerblock') Support
         .row.headerTitles
             .col-md-12.pl-0
                 h1.main__title Buy and Sell Cryptos easier than ever
