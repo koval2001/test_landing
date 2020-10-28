@@ -4,6 +4,10 @@
   width: 100%;
   padding: 42px 0px;
   @include flexLayout;
+
+  @media (max-width: 575px) {
+    padding-top: 0;
+  }
 }
 
 .nav {
@@ -13,13 +17,16 @@
     cursor: pointer;
     color: white;
     display: none;
+    i {
+      font-size: 28px;
+    }
   }
   &__list {
     padding: 10px 20px;
     margin: 0;
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    @include flexLayout(center);
+    align-items: center;
   }
   &__link {
     padding: 10px 20px;

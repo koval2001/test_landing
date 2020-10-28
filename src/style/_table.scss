@@ -1,6 +1,19 @@
 #tableblock {
   padding: 120px 0px;
   background-color: $color-gray;
+
+  @media (max-width: 800px) {
+    padding: 65px 0px;
+  }
+  @media (max-width: 600px) {
+    padding: 25px 0px;
+  }
+
+  @media (max-width: 575px) {
+    .row {
+      justify-content: center;
+    }
+  }
 }
 
 table {
@@ -8,14 +21,25 @@ table {
   padding: 13px 20px;
   color: $color-table;
   border-top: 1px solid $color-border;
+  width: 100%;
+
+  @media (max-width: 575px) {
+    width: 80%;
+  }
 
   td, th {
     font-family: "Helvetica Neue";
     font-weight: 400;
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
   }
 
   td {
     padding: 25px 0px 45px 20px;
+    @media (max-width: 600px) {
+      padding: 12px 0 24px 12px;
+    }
   }
 
   th {

@@ -3,6 +3,10 @@
   margin-bottom: 50px;
   color: $color-dark;
 
+  @media (max-width: 575px) {
+    margin-bottom: 0px;
+  }
+
   p {
     font-size: 18px;
     @include textBasics(400);
@@ -11,8 +15,21 @@
     text-align: center;
 
     @media (max-width: 991px) {
-      line-height: 32px;
+      line-height: 26px;
       padding: 0 15px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+      line-height: 22px;
+      padding: 0 0px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 575px) {
+      line-height: 18px;
+      padding: 0 0px;
+      font-size: 12px;
     }
   }
 }
@@ -27,7 +44,12 @@
   padding-bottom: 48px;
 
   @media (max-width: 991px) {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    padding-bottom: 0px;
   }
 }
 
