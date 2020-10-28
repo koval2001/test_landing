@@ -11,8 +11,8 @@ footer#footerblock
                 .sendEmail
                     p.textBoldCursive Get Updates from us
                     form(action="/cookie" method="POST")#formEmail
-                        input(type="text" name="username" placeholder="Type Email address")
-                        input(type="submit" value="Send")
+                        input(type="email" name="email" placeholder="Type Email address")
+                        input(type="submit" value="Send")#submit
             .col-12.d-flex.justify-content-between.bottomFooter.px-0
                 .left
                     a.textBoldCursive(href='#') About Us
